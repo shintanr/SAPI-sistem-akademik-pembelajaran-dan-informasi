@@ -2,14 +2,29 @@ import 'package:flutter/material.dart';
 import 'package:sapi_sistem_akademik_pembelajaran_dan_informasi/pages/main_page.dart';
 import 'package:sapi_sistem_akademik_pembelajaran_dan_informasi/shared/theme.dart';
 
-class LoginPage extends StatelessWidget {
-  const LoginPage({super.key});
+class LoginPage extends StatefulWidget {
+  LoginPage({super.key});
 
   @override
+  State<LoginPage> createState() => _LoginPageState();
+}
+
+class _LoginPageState extends State<LoginPage> {
+  @override
   Widget build(BuildContext context) {
+    bool _isHidePassword = true;
+    void _tooglePasswordVisibility() {
+      setState(() {
+        _isHidePassword = !_isHidePassword;
+      });
+    }
+
     return Scaffold(
       body: Center(
-        child: Column(
+        child: ListView(
+          padding: EdgeInsets.symmetric(
+            horizontal: 33,
+          ),
           children: [
             SizedBox(
               height: 70,
@@ -20,6 +35,7 @@ class LoginPage extends StatelessWidget {
                 fontSize: 30,
                 fontWeight: FontWeight.bold,
               ),
+              textAlign: TextAlign.center,
             ),
             SizedBox(
               height: 12,
@@ -40,83 +56,76 @@ class LoginPage extends StatelessWidget {
               'Login',
               style: blackTextStyle.copyWith(
                   fontSize: 22, fontWeight: FontWeight.w400),
+              textAlign: TextAlign.center,
             ),
             SizedBox(
               height: 12,
             ),
-            Container(
-              height: 67,
-              width: 330,
-              child: Row(
-                children: [
-                  Container(
-                    height: 32,
-                    width: 32,
-                    decoration: BoxDecoration(
-                      image: DecorationImage(
-                        image: AssetImage('assets/icon_login.png'),
-                      ),
-                    ),
-                  ),
-                  SizedBox(
-                    width: 12,
-                  ),
-                  Text(
-                    'NIM atau email SSO',
-                    style: greyTextStyle.copyWith(
-                      fontSize: 18,
-                      fontWeight: FontWeight.w600,
-                    ),
-                  ),
-                ],
+            TextFormField(
+              cursorColor: kBlackColor,
+              decoration: InputDecoration(
+                hintText: "NIM atau email SSO",
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(30),
+                ),
               ),
             ),
             SizedBox(
               height: 12,
             ),
-            Container(
-              height: 67,
-              width: 330,
-              child: Row(
-                children: [
-                  Container(
-                    height: 32,
-                    width: 32,
-                    decoration: BoxDecoration(
-                      image: DecorationImage(
-                        image: AssetImage('assets/icon_password.png'),
-                      ),
-                    ),
+            TextFormField(
+              obscureText: _isHidePassword,
+              autofocus: false,
+              initialValue: '',
+              cursorColor: kBlackColor,
+              keyboardType: TextInputType.text,
+              decoration: InputDecoration(
+                hintText: "Password",
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(30),
+                ),
+                suffixIcon: GestureDetector(
+                  onTap: () {
+                    _tooglePasswordVisibility();
+                  },
+                  child: Icon(
+                    _isHidePassword ? Icons.visibility_off : Icons.visibility,
+                    color: _isHidePassword ? kGreyColor : kPrimaryColor,
                   ),
-                  SizedBox(
-                    width: 12,
-                  ),
-                  Text(
-                    'Password',
-                    style: greyTextStyle.copyWith(
-                      fontSize: 18,
-                      fontWeight: FontWeight.w600,
-                    ),
-                  ),
-                ],
+                ),
+                isDense: true,
               ),
             ),
             SizedBox(
-              height: 16,
+              height: 33,
             ),
             Container(
-              height: 64,
+              height: 55,
               width: 350,
-              child: ElevatedButton(
+              child: TextButton(
                 onPressed: () {
-                  Navigator.pushReplacement(context,
-                      MaterialPageRoute(builder: (context) {
-                    return MainPage();
-                  }));
+                  Navigator.pushReplacement(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) {
+                        return MainPage();
+                      },
+                    ),
+                  );
                 },
-                child: Text('Login'),
+                style: TextButton.styleFrom(
+                  backgroundColor: kPrimaryColor,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(30),
+                  ),
+                ),
+                child: Text(
+                  'Login',
+                  style: whiteTextStyle.copyWith(
+                      fontSize: 20, fontWeight: FontWeight.w400),
+                ),
               ),
-            )
+            ),
           ],
         ),
       ),
