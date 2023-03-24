@@ -8,6 +8,8 @@ Color kLightBlueColor = Color(0xff1A5DBE);
 Color kBlueSkyColor = Color(0xff41A5EE);
 Color kGreyColor = Color(0xffBAB5B5);
 Color kDarkGreyColor = Color(0xff6B6B6B);
+Color kgreyContainer = Color(0xffE5E5E5);
+Color kOrangeColor = Color(0xffEDCB19);
 
 TextStyle blackTextStyle = GoogleFonts.roboto(
   color: kBlackColor,
@@ -17,7 +19,7 @@ TextStyle whiteTextStyle = GoogleFonts.roboto(
   color: kWhiteColor,
 );
 
-TextStyle darkBlueTextStyle = GoogleFonts.roboto(
+TextStyle darkGreyTextStyle = GoogleFonts.roboto(
   color: kDarkGreyColor,
 );
 

@@ -195,7 +195,168 @@ class MainPage extends StatelessWidget {
                       ),
                     ),
                   ],
-                )
+                ),
+                SizedBox(
+                  height: 20,
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Text(
+                      'Jadwal Kuliah hari ini',
+                      style: blackTextStyle.copyWith(
+                        fontSize: 16,
+                        fontWeight: FontWeight.w600,
+                      ),
+                    ),
+                    Container(
+                      height: 16,
+                      width: 16,
+                      decoration: BoxDecoration(
+                        image: DecorationImage(
+                          image: AssetImage('assets/icon_panah_samping.png'),
+                        ),
+                      ),
+                    )
+                  ],
+                ),
+                SizedBox(
+                  height: 18,
+                ),
+                Row(
+                  children: [
+                    Container(
+                      height: 31,
+                      width: 31,
+                      decoration: BoxDecoration(
+                          color: kPrimaryColor,
+                          borderRadius: BorderRadius.circular(50)),
+                    ),
+                    SizedBox(
+                      width: 6,
+                    ),
+                    Text(
+                      'Jumat',
+                      style: blackTextStyle.copyWith(
+                        fontSize: 14,
+                        fontWeight: FontWeight.w600,
+                      ),
+                    )
+                  ],
+                ),
+                SizedBox(
+                  height: 13,
+                ),
+                Container(
+                  padding: EdgeInsets.symmetric(horizontal: 16),
+                  height: 87,
+                  width: 381,
+                  decoration: BoxDecoration(
+                    color: kgreyContainer,
+                    borderRadius: BorderRadius.circular(17),
+                  ),
+                  child: Row(
+                    children: [
+                      Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Text('06.00'),
+                          SizedBox(
+                            height: 6,
+                          ),
+                          Container(
+                            height: 13,
+                            width: 13,
+                            decoration: BoxDecoration(
+                              image: DecorationImage(
+                                image:
+                                    AssetImage('assets/icon_panah_bawah.png'),
+                              ),
+                            ),
+                          ),
+                          SizedBox(
+                            height: 6,
+                          ),
+                          Text('06.50'),
+                        ],
+                      ),
+                      SizedBox(
+                        width: 25,
+                      ),
+                      Container(
+                        margin: EdgeInsets.only(right: 13),
+                        height: 87,
+                        width: 1,
+                        decoration: BoxDecoration(
+                          color: kPrimaryColor,
+                        ),
+                      ),
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          SizedBox(
+                            width: 13,
+                          ),
+                          Text(
+                            'Olahraga',
+                            style: blackTextStyle.copyWith(
+                                fontWeight: FontWeight.w600),
+                          ),
+                          SizedBox(
+                            height: 3,
+                          ),
+                          Text(
+                            'Stadion Undip',
+                            style: darkGreyTextStyle.copyWith(
+                              fontWeight: FontWeight.w300,
+                              fontSize: 11,
+                            ),
+                          ),
+                          SizedBox(
+                            height: 9,
+                          ),
+                          Row(
+                            children: [
+                              Container(
+                                height: 14,
+                                width: 10,
+                                margin: EdgeInsets.only(right: 6),
+                                decoration: BoxDecoration(
+                                  image: DecorationImage(
+                                    image: AssetImage('assets/icon_map.png'),
+                                  ),
+                                ),
+                              ),
+                              Text(
+                                'Lapangan Basket',
+                                style: blackTextStyle.copyWith(
+                                  fontWeight: FontWeight.w500,
+                                  fontSize: 11,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
+                      Container(
+                        height: 25,
+                        width: 75,
+                        margin: EdgeInsets.only(left: 75),
+                        decoration: BoxDecoration(
+                          color: kOrangeColor,
+                          borderRadius: BorderRadius.circular(17),
+                        ),
+                        child: Text(
+                          'Scan QR',
+                          style: blackTextStyle.copyWith(
+                              fontSize: 12, fontWeight: FontWeight.bold),
+                          textAlign: TextAlign.center,
+                        ),
+                      )
+                    ],
+                  ),
+                ),
               ],
             ),
           ),
