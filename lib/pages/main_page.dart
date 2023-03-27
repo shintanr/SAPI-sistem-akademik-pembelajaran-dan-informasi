@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sapi_sistem_akademik_pembelajaran_dan_informasi/pages/presensi_page.dart';
 import 'package:sapi_sistem_akademik_pembelajaran_dan_informasi/pages/second_page.dart';
 import 'package:sapi_sistem_akademik_pembelajaran_dan_informasi/shared/theme.dart';
 
@@ -77,8 +78,11 @@ class MainPage extends StatelessWidget {
             width: double.infinity,
             padding: EdgeInsets.all(15),
             decoration: BoxDecoration(
-                color: kWhiteColor,
-                borderRadius: BorderRadius.vertical(top: Radius.circular(25))),
+              color: kWhiteColor,
+              borderRadius: BorderRadius.vertical(
+                top: Radius.circular(25),
+              ),
+            ),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -139,60 +143,130 @@ class MainPage extends StatelessWidget {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Container(
-                      height: 60,
-                      width: 60,
-                      decoration: BoxDecoration(
-                        color: kPrimaryColor,
-                        image: DecorationImage(
-                          image: AssetImage('assets/icon_jadwal.png'),
+                    Column(
+                      children: [
+                        Container(
+                          height: 60,
+                          width: 60,
+                          decoration: BoxDecoration(
+                            color: kPrimaryColor,
+                            image: DecorationImage(
+                              image: AssetImage('assets/icon_jadwal.png'),
+                            ),
+                            borderRadius: BorderRadius.circular(50),
+                          ),
                         ),
-                        borderRadius: BorderRadius.circular(50),
-                      ),
+                        SizedBox(
+                          height: 2,
+                        ),
+                        Text(
+                          'Jadwal',
+                          style: blackTextStyle.copyWith(
+                            fontSize: 11,
+                            fontWeight: FontWeight.w600,
+                          ),
+                        )
+                      ],
                     ),
-                    Container(
-                      height: 60,
-                      width: 60,
-                      decoration: BoxDecoration(
-                        color: kPrimaryColor,
-                        image: DecorationImage(
-                          image: AssetImage('assets/icon_presensi.png'),
+                    Column(
+                      children: [
+                        Container(
+                          height: 60,
+                          width: 60,
+                          decoration: BoxDecoration(
+                            color: kPrimaryColor,
+                            image: DecorationImage(
+                              image: AssetImage('assets/icon_presensi.png'),
+                            ),
+                            borderRadius: BorderRadius.circular(50),
+                          ),
                         ),
-                        borderRadius: BorderRadius.circular(50),
-                      ),
+                        SizedBox(
+                          height: 2,
+                        ),
+                        Text(
+                          'Presensi',
+                          style: blackTextStyle.copyWith(
+                            fontSize: 11,
+                            fontWeight: FontWeight.w600,
+                          ),
+                        )
+                      ],
                     ),
-                    Container(
-                      height: 60,
-                      width: 60,
-                      decoration: BoxDecoration(
-                        color: kPrimaryColor,
-                        image: DecorationImage(
-                          image: AssetImage('assets/icon_krs.png'),
+                    Column(
+                      children: [
+                        Container(
+                          height: 60,
+                          width: 60,
+                          decoration: BoxDecoration(
+                            color: kPrimaryColor,
+                            image: DecorationImage(
+                              image: AssetImage('assets/icon_krs.png'),
+                            ),
+                            borderRadius: BorderRadius.circular(50),
+                          ),
                         ),
-                        borderRadius: BorderRadius.circular(50),
-                      ),
+                        SizedBox(
+                          height: 2,
+                        ),
+                        Text(
+                          'KRS',
+                          style: blackTextStyle.copyWith(
+                            fontSize: 11,
+                            fontWeight: FontWeight.w600,
+                          ),
+                        )
+                      ],
                     ),
-                    Container(
-                      height: 60,
-                      width: 60,
-                      decoration: BoxDecoration(
-                        color: kPrimaryColor,
-                        image: DecorationImage(
-                          image: AssetImage('assets/icon_khs.png'),
+                    Column(
+                      children: [
+                        Container(
+                          height: 60,
+                          width: 60,
+                          decoration: BoxDecoration(
+                            color: kPrimaryColor,
+                            image: DecorationImage(
+                              image: AssetImage('assets/icon_khs.png'),
+                            ),
+                            borderRadius: BorderRadius.circular(50),
+                          ),
                         ),
-                        borderRadius: BorderRadius.circular(50),
-                      ),
+                        SizedBox(
+                          height: 2,
+                        ),
+                        Text(
+                          'KHS',
+                          style: blackTextStyle.copyWith(
+                            fontSize: 11,
+                            fontWeight: FontWeight.w600,
+                          ),
+                        )
+                      ],
                     ),
-                    Container(
-                      height: 60,
-                      width: 60,
-                      decoration: BoxDecoration(
-                        color: kPrimaryColor,
-                        image: DecorationImage(
-                          image: AssetImage('assets/icon_elearning.png'),
+                    Column(
+                      children: [
+                        Container(
+                          height: 60,
+                          width: 60,
+                          decoration: BoxDecoration(
+                            color: kPrimaryColor,
+                            image: DecorationImage(
+                              image: AssetImage('assets/icon_elearning.png'),
+                            ),
+                            borderRadius: BorderRadius.circular(50),
+                          ),
                         ),
-                        borderRadius: BorderRadius.circular(50),
-                      ),
+                        SizedBox(
+                          height: 2,
+                        ),
+                        Text(
+                          'E-Learning',
+                          style: blackTextStyle.copyWith(
+                            fontSize: 11,
+                            fontWeight: FontWeight.w600,
+                          ),
+                        )
+                      ],
                     ),
                   ],
                 ),
@@ -254,13 +328,25 @@ class MainPage extends StatelessWidget {
                   decoration: BoxDecoration(
                     color: kgreyContainer,
                     borderRadius: BorderRadius.circular(17),
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.grey.withOpacity(0.5), //color of shadow
+                        spreadRadius: 2, //spread radius
+                        blurRadius: 2, // blur radius
+                        offset: Offset(0, 4),
+                      ),
+                    ],
                   ),
                   child: Row(
                     children: [
                       Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          Text('06.00'),
+                          Text(
+                            '06.00',
+                            style: blackTextStyle.copyWith(
+                                fontSize: 13, fontWeight: FontWeight.w600),
+                          ),
                           SizedBox(
                             height: 6,
                           ),
@@ -277,7 +363,11 @@ class MainPage extends StatelessWidget {
                           SizedBox(
                             height: 6,
                           ),
-                          Text('06.50'),
+                          Text(
+                            '06.50',
+                            style: blackTextStyle.copyWith(
+                                fontSize: 13, fontWeight: FontWeight.w600),
+                          ),
                         ],
                       ),
                       SizedBox(
@@ -314,7 +404,7 @@ class MainPage extends StatelessWidget {
                             ),
                           ),
                           SizedBox(
-                            height: 9,
+                            height: 12,
                           ),
                           Row(
                             children: [
@@ -339,24 +429,151 @@ class MainPage extends StatelessWidget {
                           ),
                         ],
                       ),
-                      Container(
-                        height: 25,
-                        width: 75,
-                        margin: EdgeInsets.only(left: 75),
-                        decoration: BoxDecoration(
-                          color: kOrangeColor,
-                          borderRadius: BorderRadius.circular(17),
+                      SizedBox(
+                        width: 90,
+                      ),
+                      Expanded(
+                        child: Container(
+                          height: 29,
+                          width: 75,
+                          child: TextButton(
+                            onPressed: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) {
+                                    return PresensiPage();
+                                  },
+                                ),
+                              );
+                            },
+                            style: TextButton.styleFrom(
+                              backgroundColor: kBlueSkyColor,
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(10),
+                              ),
+                            ),
+                            child: Text(
+                              'Scan QR',
+                              style: whiteTextStyle.copyWith(
+                                  fontSize: 12, fontWeight: FontWeight.bold),
+                              textAlign: TextAlign.center,
+                            ),
+                          ),
                         ),
-                        child: Text(
-                          'Scan QR',
-                          style: blackTextStyle.copyWith(
-                              fontSize: 12, fontWeight: FontWeight.bold),
-                          textAlign: TextAlign.center,
-                        ),
-                      )
+                      ),
                     ],
                   ),
                 ),
+                SizedBox(
+                  height: 18,
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Text(
+                      'Informasi untuk Kamu',
+                      style: blackTextStyle.copyWith(
+                          fontSize: 16, fontWeight: FontWeight.w600),
+                    ),
+                    Container(
+                      height: 16,
+                      width: 16,
+                      decoration: BoxDecoration(
+                        image: DecorationImage(
+                          image: AssetImage('assets/icon_panah_samping.png'),
+                        ),
+                      ),
+                    )
+                  ],
+                ),
+                SizedBox(
+                  height: 15,
+                ),
+                GestureDetector(
+                  onTap: () {},
+                  child: Container(
+                    width: 360,
+                    height: 250,
+                    padding: EdgeInsets.all(10),
+                    decoration: BoxDecoration(
+                      color: kWhiteColor,
+                    ),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Container(
+                          width: 381,
+                          height: 120,
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(12),
+                            image: DecorationImage(
+                              image:
+                                  AssetImage('assets/informasi_lomba_kti.png'),
+                            ),
+                          ),
+                        ),
+                        Text(
+                          'INSTINCT: Lomba karya Tulis Ilmiah Tingkat Nasional',
+                          style: blackTextStyle.copyWith(
+                            fontSize: 12,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                        SizedBox(
+                          height: 5,
+                        ),
+                        Text(
+                          'INSTINCT: Lomba karya Tulis Ilmiah Tingkat Nasional telah dibuka. Peserta diharapkan untuk segera mendaftarkan diri',
+                          style: darkGreyTextStyle.copyWith(
+                            fontSize: 10,
+                            fontWeight: FontWeight.w300,
+                          ),
+                          overflow: TextOverflow.ellipsis,
+                        ),
+                        SizedBox(
+                          height: 5,
+                        ),
+                        Container(
+                          height: 30,
+                          width: 381,
+                          child: TextButton(
+                            onPressed: () {},
+                            style: TextButton.styleFrom(
+                              backgroundColor: kPrimaryColor,
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(5),
+                              ),
+                            ),
+                            child: Row(
+                              children: [
+                                Text(
+                                  'Selanjutnya',
+                                  style: whiteTextStyle.copyWith(
+                                      fontSize: 12,
+                                      fontWeight: FontWeight.w400),
+                                ),
+                                SizedBox(
+                                  width: 3,
+                                ),
+                                Container(
+                                  height: 15,
+                                  width: 15,
+                                  decoration: BoxDecoration(
+                                    image: DecorationImage(
+                                      image: AssetImage(
+                                          'assets/icon_panah_samping.png'),
+                                    ),
+                                  ),
+                                )
+                              ],
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                )
               ],
             ),
           ),

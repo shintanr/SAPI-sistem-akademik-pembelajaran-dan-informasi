@@ -63,11 +63,13 @@ class _LoginPageState extends State<LoginPage> {
             ),
             TextFormField(
               cursorColor: kBlackColor,
+              keyboardType: TextInputType.text,
               decoration: InputDecoration(
                 hintText: "NIM atau email SSO",
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(30),
                 ),
+                isDense: true,
               ),
             ),
             SizedBox(
@@ -76,7 +78,6 @@ class _LoginPageState extends State<LoginPage> {
             TextFormField(
               obscureText: _isHidePassword,
               autofocus: false,
-              initialValue: '',
               cursorColor: kBlackColor,
               keyboardType: TextInputType.text,
               decoration: InputDecoration(
