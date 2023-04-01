@@ -9,13 +9,13 @@ class MainMainPage extends StatelessWidget {
       child: Container(
         width: double.infinity,
         height: 60,
-        margin: EdgeInsets.only(),
+        margin: const EdgeInsets.only(),
       ),
     );
   }
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return const Scaffold();
   }
 }

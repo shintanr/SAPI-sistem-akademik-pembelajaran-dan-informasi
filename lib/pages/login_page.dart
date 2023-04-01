@@ -3,7 +3,7 @@ import 'package:sapi_sistem_akademik_pembelajaran_dan_informasi/pages/main_page.
 import 'package:sapi_sistem_akademik_pembelajaran_dan_informasi/shared/theme.dart';
 
 class LoginPage extends StatefulWidget {
-  LoginPage({super.key});
+  const LoginPage({super.key});
 
   @override
   State<LoginPage> createState() => _LoginPageState();
@@ -12,21 +12,21 @@ class LoginPage extends StatefulWidget {
 class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
-    bool _isHidePassword = true;
+    bool isHidePassword = true;
     void _tooglePasswordVisibility() {
       setState(() {
-        _isHidePassword = !_isHidePassword;
+        isHidePassword = !isHidePassword;
       });
     }
 
     return Scaffold(
       body: Center(
         child: ListView(
-          padding: EdgeInsets.symmetric(
+          padding: const EdgeInsets.symmetric(
             horizontal: 33,
           ),
           children: [
-            SizedBox(
+            const SizedBox(
               height: 70,
             ),
             Text(
@@ -37,19 +37,19 @@ class _LoginPageState extends State<LoginPage> {
               ),
               textAlign: TextAlign.center,
             ),
-            SizedBox(
+            const SizedBox(
               height: 12,
             ),
             Container(
               width: 236,
               height: 242,
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 image: DecorationImage(
                   image: AssetImage('assets/logo_undipp.png'),
                 ),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 12,
             ),
             Text(
@@ -58,7 +58,7 @@ class _LoginPageState extends State<LoginPage> {
                   fontSize: 22, fontWeight: FontWeight.w400),
               textAlign: TextAlign.center,
             ),
-            SizedBox(
+            const SizedBox(
               height: 12,
             ),
             TextFormField(
@@ -72,11 +72,11 @@ class _LoginPageState extends State<LoginPage> {
                 isDense: true,
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 12,
             ),
             TextFormField(
-              obscureText: _isHidePassword,
+              obscureText: isHidePassword,
               autofocus: false,
               cursorColor: kBlackColor,
               keyboardType: TextInputType.text,
@@ -90,17 +90,17 @@ class _LoginPageState extends State<LoginPage> {
                     _tooglePasswordVisibility();
                   },
                   child: Icon(
-                    _isHidePassword ? Icons.visibility_off : Icons.visibility,
-                    color: _isHidePassword ? kGreyColor : kPrimaryColor,
+                    isHidePassword ? Icons.visibility_off : Icons.visibility,
+                    color: isHidePassword ? kGreyColor : kPrimaryColor,
                   ),
                 ),
                 isDense: true,
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 33,
             ),
-            Container(
+            SizedBox(
               height: 55,
               width: 350,
               child: TextButton(
@@ -109,7 +109,7 @@ class _LoginPageState extends State<LoginPage> {
                     context,
                     MaterialPageRoute(
                       builder: (context) {
-                        return MainPage();
+                        return const MainPage();
                       },
                     ),
                   );

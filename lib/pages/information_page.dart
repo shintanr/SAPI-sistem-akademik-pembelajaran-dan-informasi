@@ -11,7 +11,7 @@ class InformationPage extends StatelessWidget {
         backgroundColor: kPrimaryColor,
         body: ListView(
           children: [
-            SizedBox(
+            const SizedBox(
               height: 50,
             ),
             Center(
@@ -21,15 +21,15 @@ class InformationPage extends StatelessWidget {
                     fontSize: 20, fontWeight: FontWeight.bold),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 22,
             ),
             Container(
               width: double.infinity,
-              padding: EdgeInsets.all(15),
+              padding: const EdgeInsets.all(15),
               decoration: BoxDecoration(
                 color: kWhiteColor,
-                borderRadius: BorderRadius.vertical(top: Radius.circular(25)),
+                borderRadius: const BorderRadius.vertical(top: Radius.circular(25)),
               ),
               child: Column(
                 children: [
@@ -38,7 +38,7 @@ class InformationPage extends StatelessWidget {
                     child: Container(
                       width: double.infinity,
                       height: 220,
-                      padding: EdgeInsets.all(10),
+                      padding: const EdgeInsets.all(10),
                       decoration: BoxDecoration(
                         color: kWhiteColor,
                       ),
@@ -50,7 +50,7 @@ class InformationPage extends StatelessWidget {
                             height: 120,
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(12),
-                              image: DecorationImage(
+                              image: const DecorationImage(
                                   image: AssetImage('assets/pict_info4.jpg'),
                                   fit: BoxFit.cover),
                               boxShadow: [
@@ -58,7 +58,7 @@ class InformationPage extends StatelessWidget {
                                   color: Colors.grey.withOpacity(0.5),
                                   spreadRadius: 5,
                                   blurRadius: 7,
-                                  offset: Offset(
+                                  offset: const Offset(
                                       0, 3), // changes position of shadow
                                 ),
                               ],
@@ -71,7 +71,7 @@ class InformationPage extends StatelessWidget {
                               fontWeight: FontWeight.bold,
                             ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 5,
                           ),
                           Text(
@@ -82,10 +82,10 @@ class InformationPage extends StatelessWidget {
                             ),
                             overflow: TextOverflow.ellipsis,
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 5,
                           ),
-                          Container(
+                          SizedBox(
                             height: 30,
                             width: 381,
                             child: TextButton(
@@ -104,13 +104,13 @@ class InformationPage extends StatelessWidget {
                                         fontSize: 12,
                                         fontWeight: FontWeight.w400),
                                   ),
-                                  SizedBox(
+                                  const SizedBox(
                                     width: 3,
                                   ),
                                   Container(
                                     height: 15,
                                     width: 15,
-                                    decoration: BoxDecoration(
+                                    decoration: const BoxDecoration(
                                       image: DecorationImage(
                                         image: AssetImage(
                                             'assets/icon_panah_samping.png'),
@@ -130,7 +130,7 @@ class InformationPage extends StatelessWidget {
                     child: Container(
                       width: double.infinity,
                       height: 220,
-                      padding: EdgeInsets.all(10),
+                      padding: const EdgeInsets.all(10),
                       decoration: BoxDecoration(
                         color: kWhiteColor,
                       ),
@@ -142,7 +142,7 @@ class InformationPage extends StatelessWidget {
                             height: 120,
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(12),
-                              image: DecorationImage(
+                              image: const DecorationImage(
                                 image: AssetImage(
                                   'assets/pict_info3.jpg',
                                 ),
@@ -153,7 +153,7 @@ class InformationPage extends StatelessWidget {
                                   color: Colors.grey.withOpacity(0.5),
                                   spreadRadius: 5,
                                   blurRadius: 7,
-                                  offset: Offset(
+                                  offset: const Offset(
                                       0, 3), // changes position of shadow
                                 ),
                               ],
@@ -166,7 +166,7 @@ class InformationPage extends StatelessWidget {
                               fontWeight: FontWeight.bold,
                             ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 5,
                           ),
                           Text(
@@ -177,10 +177,10 @@ class InformationPage extends StatelessWidget {
                             ),
                             overflow: TextOverflow.ellipsis,
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 5,
                           ),
-                          Container(
+                          SizedBox(
                             height: 30,
                             width: 381,
                             child: TextButton(
@@ -199,13 +199,13 @@ class InformationPage extends StatelessWidget {
                                         fontSize: 12,
                                         fontWeight: FontWeight.w400),
                                   ),
-                                  SizedBox(
+                                  const SizedBox(
                                     width: 3,
                                   ),
                                   Container(
                                     height: 15,
                                     width: 15,
-                                    decoration: BoxDecoration(
+                                    decoration: const BoxDecoration(
                                       image: DecorationImage(
                                         image: AssetImage(
                                             'assets/icon_panah_samping.png'),
@@ -225,7 +225,7 @@ class InformationPage extends StatelessWidget {
                     child: Container(
                       width: double.infinity,
                       height: 220,
-                      padding: EdgeInsets.all(10),
+                      padding: const EdgeInsets.all(10),
                       decoration: BoxDecoration(
                         color: kWhiteColor,
                       ),
@@ -237,7 +237,7 @@ class InformationPage extends StatelessWidget {
                             height: 120,
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(12),
-                              image: DecorationImage(
+                              image: const DecorationImage(
                                 image: AssetImage('assets/pict_info2.jpg'),
                                 fit: BoxFit.cover,
                               ),
@@ -246,7 +246,7 @@ class InformationPage extends StatelessWidget {
                                   color: Colors.grey.withOpacity(0.5),
                                   spreadRadius: 5,
                                   blurRadius: 7,
-                                  offset: Offset(
+                                  offset: const Offset(
                                       0, 3), // changes position of shadow
                                 ),
                               ],
@@ -259,7 +259,7 @@ class InformationPage extends StatelessWidget {
                               fontWeight: FontWeight.bold,
                             ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 5,
                           ),
                           Text(
@@ -270,10 +270,10 @@ class InformationPage extends StatelessWidget {
                             ),
                             overflow: TextOverflow.ellipsis,
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 5,
                           ),
-                          Container(
+                          SizedBox(
                             height: 30,
                             width: 381,
                             child: TextButton(
@@ -292,13 +292,13 @@ class InformationPage extends StatelessWidget {
                                         fontSize: 12,
                                         fontWeight: FontWeight.w400),
                                   ),
-                                  SizedBox(
+                                  const SizedBox(
                                     width: 3,
                                   ),
                                   Container(
                                     height: 15,
                                     width: 15,
-                                    decoration: BoxDecoration(
+                                    decoration: const BoxDecoration(
                                       image: DecorationImage(
                                         image: AssetImage(
                                             'assets/icon_panah_samping.png'),
@@ -318,7 +318,7 @@ class InformationPage extends StatelessWidget {
                     child: Container(
                       width: double.infinity,
                       height: 250,
-                      padding: EdgeInsets.all(10),
+                      padding: const EdgeInsets.all(10),
                       decoration: BoxDecoration(
                         color: kWhiteColor,
                       ),
@@ -330,7 +330,7 @@ class InformationPage extends StatelessWidget {
                             height: 120,
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(12),
-                              image: DecorationImage(
+                              image: const DecorationImage(
                                 image: AssetImage('assets/pict_info1.jpg'),
                                 fit: BoxFit.cover,
                               ),
@@ -339,7 +339,7 @@ class InformationPage extends StatelessWidget {
                                   color: Colors.grey.withOpacity(0.5),
                                   spreadRadius: 5,
                                   blurRadius: 7,
-                                  offset: Offset(
+                                  offset: const Offset(
                                       0, 3), // changes position of shadow
                                 ),
                               ],
@@ -352,7 +352,7 @@ class InformationPage extends StatelessWidget {
                               fontWeight: FontWeight.bold,
                             ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 5,
                           ),
                           Text(
@@ -363,10 +363,10 @@ class InformationPage extends StatelessWidget {
                             ),
                             overflow: TextOverflow.ellipsis,
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 5,
                           ),
-                          Container(
+                          SizedBox(
                             height: 30,
                             width: 381,
                             child: TextButton(
@@ -385,13 +385,13 @@ class InformationPage extends StatelessWidget {
                                         fontSize: 12,
                                         fontWeight: FontWeight.w400),
                                   ),
-                                  SizedBox(
+                                  const SizedBox(
                                     width: 3,
                                   ),
                                   Container(
                                     height: 15,
                                     width: 15,
-                                    decoration: BoxDecoration(
+                                    decoration: const BoxDecoration(
                                       image: DecorationImage(
                                         image: AssetImage(
                                             'assets/icon_panah_samping.png'),

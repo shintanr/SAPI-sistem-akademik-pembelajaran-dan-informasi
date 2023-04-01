@@ -10,7 +10,7 @@ class PresensiPage extends StatelessWidget {
       backgroundColor: kPrimaryColor,
       body: Column(
         children: [
-          SizedBox(
+          const SizedBox(
             height: 50,
           ),
           Center(
@@ -20,21 +20,21 @@ class PresensiPage extends StatelessWidget {
                   fontSize: 20, fontWeight: FontWeight.bold),
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 22,
           ),
           Container(
             width: double.infinity,
-            padding: EdgeInsets.symmetric(horizontal: 27),
+            padding: const EdgeInsets.symmetric(horizontal: 27),
             decoration: BoxDecoration(
               color: kWhiteColor,
-              borderRadius: BorderRadius.vertical(
+              borderRadius: const BorderRadius.vertical(
                 top: Radius.circular(25),
               ),
             ),
             child: Column(
               children: [
-                SizedBox(
+                const SizedBox(
                   height: 95,
                 ),
                 Text(
@@ -44,20 +44,20 @@ class PresensiPage extends StatelessWidget {
                     fontWeight: FontWeight.w500,
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 5,
                 ),
                 Container(
                   height: 360,
                   width: 417,
                   decoration: BoxDecoration(
-                      image: DecorationImage(
+                      image: const DecorationImage(
                         image: AssetImage('assets/presensi_capture.png'),
                         fit: BoxFit.contain,
                       ),
                       borderRadius: BorderRadius.circular(31)),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 15,
                 ),
                 Container(
@@ -79,7 +79,7 @@ class PresensiPage extends StatelessWidget {
                         child: Container(
                           height: 18,
                           width: 18,
-                          decoration: BoxDecoration(
+                          decoration: const BoxDecoration(
                             image: DecorationImage(
                               image: AssetImage('assets/icon_qr.png'),
                             ),
@@ -96,7 +96,7 @@ class PresensiPage extends StatelessWidget {
                         child: Container(
                           height: 18,
                           width: 18,
-                          decoration: BoxDecoration(
+                          decoration: const BoxDecoration(
                             image: DecorationImage(
                               image: AssetImage('assets/icon_pensil.png'),
                             ),
@@ -106,7 +106,7 @@ class PresensiPage extends StatelessWidget {
                     ],
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 100,
                 ),
               ],

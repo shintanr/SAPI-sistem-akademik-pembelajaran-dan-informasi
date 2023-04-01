@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:sapi_sistem_akademik_pembelajaran_dan_informasi/pages/information_page.dart';
 import 'package:sapi_sistem_akademik_pembelajaran_dan_informasi/pages/presensi_page.dart';
-import 'package:sapi_sistem_akademik_pembelajaran_dan_informasi/pages/second_page.dart';
 import 'package:sapi_sistem_akademik_pembelajaran_dan_informasi/shared/theme.dart';
 
 class MainPage extends StatelessWidget {
@@ -13,24 +11,24 @@ class MainPage extends StatelessWidget {
       backgroundColor: kPrimaryColor,
       body: ListView(
         children: [
-          SizedBox(
+          const SizedBox(
             height: 40,
           ),
           Row(
             children: [
               Container(
-                margin: EdgeInsets.only(
+                margin: const EdgeInsets.only(
                   left: 25,
                 ),
                 height: 48,
                 width: 48,
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                   image: DecorationImage(
                     image: AssetImage('assets/zayn_malik.png'),
                   ),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 width: 15,
               ),
               Expanded(
@@ -44,7 +42,7 @@ class MainPage extends StatelessWidget {
                         fontWeight: FontWeight.w600,
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 6,
                     ),
                     Text(
@@ -63,7 +61,7 @@ class MainPage extends StatelessWidget {
                 ),
               ),
               IconButton(
-                padding: EdgeInsets.only(right: 25),
+                padding: const EdgeInsets.only(right: 25),
                 onPressed: () {},
                 icon: Icon(
                   Icons.settings,
@@ -72,15 +70,15 @@ class MainPage extends StatelessWidget {
               ),
             ],
           ),
-          SizedBox(
+          const SizedBox(
             height: 12,
           ),
           Container(
             width: double.infinity,
-            padding: EdgeInsets.all(15),
+            padding: const EdgeInsets.all(15),
             decoration: BoxDecoration(
               color: kWhiteColor,
-              borderRadius: BorderRadius.vertical(
+              borderRadius: const BorderRadius.vertical(
                 top: Radius.circular(25),
               ),
             ),
@@ -90,7 +88,7 @@ class MainPage extends StatelessWidget {
                 Container(
                   height: 150,
                   width: 384,
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     image: DecorationImage(
                       image: AssetImage(
                         'assets/fh_undip.png',
@@ -98,7 +96,7 @@ class MainPage extends StatelessWidget {
                     ),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 5,
                 ),
                 Text(
@@ -108,7 +106,7 @@ class MainPage extends StatelessWidget {
                     fontWeight: FontWeight.w700,
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 6,
                 ),
                 Text(
@@ -118,19 +116,19 @@ class MainPage extends StatelessWidget {
                     fontWeight: FontWeight.w300,
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 7,
                 ),
                 Container(
                   height: 5,
                   width: 54,
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     image: DecorationImage(
                       image: AssetImage('assets/icon_line_blue.png'),
                     ),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 19,
                 ),
                 Text(
@@ -138,7 +136,7 @@ class MainPage extends StatelessWidget {
                   style: blackTextStyle.copyWith(
                       fontSize: 16, fontWeight: FontWeight.w600),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 14,
                 ),
                 Row(
@@ -151,13 +149,13 @@ class MainPage extends StatelessWidget {
                           width: 60,
                           decoration: BoxDecoration(
                             color: kPrimaryColor,
-                            image: DecorationImage(
+                            image: const DecorationImage(
                               image: AssetImage('assets/icon_jadwal.png'),
                             ),
                             borderRadius: BorderRadius.circular(50),
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 2,
                         ),
                         Text(
@@ -176,13 +174,13 @@ class MainPage extends StatelessWidget {
                           width: 60,
                           decoration: BoxDecoration(
                             color: kPrimaryColor,
-                            image: DecorationImage(
+                            image: const DecorationImage(
                               image: AssetImage('assets/icon_presensi.png'),
                             ),
                             borderRadius: BorderRadius.circular(50),
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 2,
                         ),
                         Text(
@@ -201,13 +199,13 @@ class MainPage extends StatelessWidget {
                           width: 60,
                           decoration: BoxDecoration(
                             color: kPrimaryColor,
-                            image: DecorationImage(
+                            image: const DecorationImage(
                               image: AssetImage('assets/icon_krs.png'),
                             ),
                             borderRadius: BorderRadius.circular(50),
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 2,
                         ),
                         Text(
@@ -226,13 +224,13 @@ class MainPage extends StatelessWidget {
                           width: 60,
                           decoration: BoxDecoration(
                             color: kPrimaryColor,
-                            image: DecorationImage(
+                            image: const DecorationImage(
                               image: AssetImage('assets/icon_khs.png'),
                             ),
                             borderRadius: BorderRadius.circular(50),
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 2,
                         ),
                         Text(
@@ -251,13 +249,13 @@ class MainPage extends StatelessWidget {
                           width: 60,
                           decoration: BoxDecoration(
                             color: kPrimaryColor,
-                            image: DecorationImage(
+                            image: const DecorationImage(
                               image: AssetImage('assets/icon_elearning.png'),
                             ),
                             borderRadius: BorderRadius.circular(50),
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 2,
                         ),
                         Text(
@@ -271,7 +269,7 @@ class MainPage extends StatelessWidget {
                     ),
                   ],
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
                 Row(
@@ -287,7 +285,7 @@ class MainPage extends StatelessWidget {
                     Container(
                       height: 16,
                       width: 16,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         image: DecorationImage(
                           image: AssetImage('assets/icon_panah_samping.png'),
                         ),
@@ -295,7 +293,7 @@ class MainPage extends StatelessWidget {
                     )
                   ],
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 18,
                 ),
                 Row(
@@ -307,7 +305,7 @@ class MainPage extends StatelessWidget {
                           color: kPrimaryColor,
                           borderRadius: BorderRadius.circular(50)),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 6,
                     ),
                     Text(
@@ -319,11 +317,11 @@ class MainPage extends StatelessWidget {
                     )
                   ],
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 13,
                 ),
                 Container(
-                  padding: EdgeInsets.symmetric(horizontal: 16),
+                  padding: const EdgeInsets.symmetric(horizontal: 16),
                   height: 87,
                   width: 381,
                   decoration: BoxDecoration(
@@ -334,7 +332,7 @@ class MainPage extends StatelessWidget {
                         color: Colors.grey.withOpacity(0.5), //color of shadow
                         spreadRadius: 2, //spread radius
                         blurRadius: 2, // blur radius
-                        offset: Offset(0, 4),
+                        offset: const Offset(0, 4),
                       ),
                     ],
                   ),
@@ -348,20 +346,20 @@ class MainPage extends StatelessWidget {
                             style: blackTextStyle.copyWith(
                                 fontSize: 13, fontWeight: FontWeight.w600),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 6,
                           ),
                           Container(
                             height: 13,
                             width: 13,
-                            decoration: BoxDecoration(
+                            decoration: const BoxDecoration(
                               image: DecorationImage(
                                 image:
                                     AssetImage('assets/icon_panah_bawah.png'),
                               ),
                             ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 6,
                           ),
                           Text(
@@ -371,11 +369,11 @@ class MainPage extends StatelessWidget {
                           ),
                         ],
                       ),
-                      SizedBox(
+                      const SizedBox(
                         width: 25,
                       ),
                       Container(
-                        margin: EdgeInsets.only(right: 13),
+                        margin: const EdgeInsets.only(right: 13),
                         height: 87,
                         width: 1,
                         decoration: BoxDecoration(
@@ -386,7 +384,7 @@ class MainPage extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          SizedBox(
+                          const SizedBox(
                             width: 13,
                           ),
                           Text(
@@ -394,7 +392,7 @@ class MainPage extends StatelessWidget {
                             style: blackTextStyle.copyWith(
                                 fontWeight: FontWeight.w600),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 3,
                           ),
                           Text(
@@ -404,7 +402,7 @@ class MainPage extends StatelessWidget {
                               fontSize: 11,
                             ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 12,
                           ),
                           Row(
@@ -412,8 +410,8 @@ class MainPage extends StatelessWidget {
                               Container(
                                 height: 14,
                                 width: 10,
-                                margin: EdgeInsets.only(right: 6),
-                                decoration: BoxDecoration(
+                                margin: const EdgeInsets.only(right: 6),
+                                decoration: const BoxDecoration(
                                   image: DecorationImage(
                                     image: AssetImage('assets/icon_map.png'),
                                   ),
@@ -430,11 +428,11 @@ class MainPage extends StatelessWidget {
                           ),
                         ],
                       ),
-                      SizedBox(
+                      const SizedBox(
                         width: 90,
                       ),
                       Expanded(
-                        child: Container(
+                        child: SizedBox(
                           height: 29,
                           width: 75,
                           child: TextButton(
@@ -443,7 +441,7 @@ class MainPage extends StatelessWidget {
                                 context,
                                 MaterialPageRoute(
                                   builder: (context) {
-                                    return PresensiPage();
+                                    return const PresensiPage();
                                   },
                                 ),
                               );
@@ -466,7 +464,7 @@ class MainPage extends StatelessWidget {
                     ],
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 18,
                 ),
                 Row(
@@ -480,7 +478,7 @@ class MainPage extends StatelessWidget {
                     Container(
                       height: 16,
                       width: 16,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         image: DecorationImage(
                           image: AssetImage('assets/icon_panah_samping.png'),
                         ),
@@ -488,7 +486,7 @@ class MainPage extends StatelessWidget {
                     )
                   ],
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 15,
                 ),
                 GestureDetector(
@@ -496,7 +494,7 @@ class MainPage extends StatelessWidget {
                   child: Container(
                     width: double.infinity,
                     height: 250,
-                    padding: EdgeInsets.all(10),
+                    padding: const EdgeInsets.all(10),
                     decoration: BoxDecoration(
                       color: kWhiteColor,
                     ),
@@ -508,7 +506,7 @@ class MainPage extends StatelessWidget {
                           height: 120,
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(12),
-                            image: DecorationImage(
+                            image: const DecorationImage(
                               image:
                                   AssetImage('assets/informasi_lomba_kti.png'),
                             ),
@@ -521,7 +519,7 @@ class MainPage extends StatelessWidget {
                             fontWeight: FontWeight.bold,
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 5,
                         ),
                         Text(
@@ -532,10 +530,10 @@ class MainPage extends StatelessWidget {
                           ),
                           overflow: TextOverflow.ellipsis,
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 5,
                         ),
-                        Container(
+                        SizedBox(
                           height: 30,
                           width: 381,
                           child: TextButton(
@@ -554,13 +552,13 @@ class MainPage extends StatelessWidget {
                                       fontSize: 12,
                                       fontWeight: FontWeight.w400),
                                 ),
-                                SizedBox(
+                                const SizedBox(
                                   width: 3,
                                 ),
                                 Container(
                                   height: 15,
                                   width: 15,
-                                  decoration: BoxDecoration(
+                                  decoration: const BoxDecoration(
                                     image: DecorationImage(
                                       image: AssetImage(
                                           'assets/icon_panah_samping.png'),

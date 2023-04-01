@@ -11,10 +11,10 @@ class InformationCard extends StatelessWidget {
       child: Container(
         width: 360,
         height: 220,
-        margin: EdgeInsets.only(
+        margin: const EdgeInsets.only(
           left: 27,
         ),
-        padding: EdgeInsets.all(27),
+        padding: const EdgeInsets.all(27),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(12),
           color: kWhiteColor,
@@ -26,22 +26,22 @@ class InformationCard extends StatelessWidget {
               height: 120,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(12),
-                image: DecorationImage(
+                image: const DecorationImage(
                   image: AssetImage('assets/info_lomba_kti.png'),
                 ),
               ),
             ),
-            Text(
+            const Text(
                 'Pengumuman Program Praktisi Mengajar Mengajar Angkatan 2 Tahun 2023'),
-            SizedBox(
+            const SizedBox(
               height: 9,
             ),
-            Text(
+            const Text(
                 'Pendaftaran program Praktisi Mengajar Angkatan 2 bagi perguru...'),
-            SizedBox(
+            const SizedBox(
               height: 16,
             ),
-            Container(
+            SizedBox(
               height: 30,
               width: 360,
               child: TextButton(
@@ -62,7 +62,7 @@ class InformationCard extends StatelessWidget {
                     Container(
                       height: 15,
                       width: 15,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         image: DecorationImage(
                           image: AssetImage('assets/icon_panah_samping.png'),
                         ),
