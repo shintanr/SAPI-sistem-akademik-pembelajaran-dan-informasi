@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sapi_sistem_akademik_pembelajaran_dan_informasi/pages/information_page.dart';
 import 'package:sapi_sistem_akademik_pembelajaran_dan_informasi/pages/presensi_page.dart';
 import 'package:sapi_sistem_akademik_pembelajaran_dan_informasi/pages/second_page.dart';
 import 'package:sapi_sistem_akademik_pembelajaran_dan_informasi/shared/theme.dart';
@@ -442,7 +443,7 @@ class MainPage extends StatelessWidget {
                                 context,
                                 MaterialPageRoute(
                                   builder: (context) {
-                                    return PresensiPage();
+                                    return InformationPage();
                                   },
                                 ),
                               );
@@ -493,7 +494,7 @@ class MainPage extends StatelessWidget {
                 GestureDetector(
                   onTap: () {},
                   child: Container(
-                    width: 360,
+                    width: double.infinity,
                     height: 250,
                     padding: EdgeInsets.all(10),
                     decoration: BoxDecoration(

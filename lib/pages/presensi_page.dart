@@ -44,9 +44,74 @@ class PresensiPage extends StatelessWidget {
                     fontWeight: FontWeight.w500,
                   ),
                 ),
+                SizedBox(
+                  height: 5,
+                ),
+                Container(
+                  height: 360,
+                  width: 417,
+                  decoration: BoxDecoration(
+                      image: DecorationImage(
+                        image: AssetImage('assets/presensi_capture.png'),
+                        fit: BoxFit.contain,
+                      ),
+                      borderRadius: BorderRadius.circular(31)),
+                ),
+                SizedBox(
+                  height: 15,
+                ),
+                Container(
+                  height: 38,
+                  width: 135,
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(20),
+                      color: kgreyContainer),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: [
+                      Container(
+                        height: 32,
+                        width: 61,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(20),
+                          color: kPrimaryColor,
+                        ),
+                        child: Container(
+                          height: 18,
+                          width: 18,
+                          decoration: BoxDecoration(
+                            image: DecorationImage(
+                              image: AssetImage('assets/icon_qr.png'),
+                            ),
+                          ),
+                        ),
+                      ),
+                      Container(
+                        height: 32,
+                        width: 61,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(20),
+                          color: kgreyContainer,
+                        ),
+                        child: Container(
+                          height: 18,
+                          width: 18,
+                          decoration: BoxDecoration(
+                            image: DecorationImage(
+                              image: AssetImage('assets/icon_pensil.png'),
+                            ),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                SizedBox(
+                  height: 100,
+                ),
               ],
             ),
-          )
+          ),
         ],
       ),
     );
