@@ -1,73 +1,15 @@
 import 'package:flutter/material.dart';
 
-import '../shared/theme.dart';
-
-class CustomButtonNagigationItem extends StatelessWidget {
-  const CustomButtonNagigationItem({super.key});
+class NavigationBar extends StatefulWidget {
+  const NavigationBar({super.key});
 
   @override
+  State<NavigationBar> createState() => _NavigationBarState();
+}
+
+class _NavigationBarState extends State<NavigationBar> {
+  @override
   Widget build(BuildContext context) {
-    return GestureDetector(
-      onTap: () {},
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: [
-          Column(
-            children: [
-              SizedBox(),
-              Image.asset(
-                'assets/icon_homepage.png',
-                width: 27,
-                height: 27,
-                color: kPrimaryColor,
-              ),
-              Container(
-                width: 30,
-                height: 2,
-                decoration: BoxDecoration(
-                  color: kPrimaryColor,
-                ),
-              )
-            ],
-          ),
-          Column(
-            children: [
-              SizedBox(),
-              Image.asset(
-                'assets/icon_homepage.png',
-                width: 27,
-                height: 27,
-                color: kPrimaryColor,
-              ),
-              Container(
-                width: 30,
-                height: 2,
-                decoration: BoxDecoration(
-                  color: kPrimaryColor,
-                ),
-              )
-            ],
-          ),
-          Column(
-            children: [
-              SizedBox(),
-              Image.asset(
-                'assets/icon_homepage.png',
-                width: 27,
-                height: 27,
-                color: kPrimaryColor,
-              ),
-              Container(
-                width: 30,
-                height: 2,
-                decoration: BoxDecoration(
-                  color: kPrimaryColor,
-                ),
-              )
-            ],
-          ),
-        ],
-      ),
-    );
+    return Scaffold();
   }
 }

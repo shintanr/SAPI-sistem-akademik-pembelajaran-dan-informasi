@@ -443,7 +443,7 @@ class MainPage extends StatelessWidget {
                                 context,
                                 MaterialPageRoute(
                                   builder: (context) {
-                                    return InformationPage();
+                                    return PresensiPage();
                                   },
                                 ),
                               );
