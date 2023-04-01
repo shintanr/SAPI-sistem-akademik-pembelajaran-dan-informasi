@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sapi_sistem_akademik_pembelajaran_dan_informasi/pages/information_page.dart';
 import 'package:sapi_sistem_akademik_pembelajaran_dan_informasi/pages/presensi_page.dart';
 import 'package:sapi_sistem_akademik_pembelajaran_dan_informasi/shared/theme.dart';
 
@@ -244,22 +245,32 @@ class MainPage extends StatelessWidget {
                     ),
                     Column(
                       children: [
-                        Container(
-                          height: 60,
-                          width: 60,
-                          decoration: BoxDecoration(
-                            color: kPrimaryColor,
-                            image: const DecorationImage(
-                              image: AssetImage('assets/icon_elearning.png'),
+                        GestureDetector(
+                          onTap: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => InformationPage(),
+                              ),
+                            );
+                          },
+                          child: Container(
+                            height: 60,
+                            width: 60,
+                            decoration: BoxDecoration(
+                              color: kPrimaryColor,
+                              image: const DecorationImage(
+                                image: AssetImage('assets/icon_informasi.png'),
+                              ),
+                              borderRadius: BorderRadius.circular(50),
                             ),
-                            borderRadius: BorderRadius.circular(50),
                           ),
                         ),
                         const SizedBox(
                           height: 2,
                         ),
                         Text(
-                          'E-Learning',
+                          'Informasi',
                           style: blackTextStyle.copyWith(
                             fontSize: 11,
                             fontWeight: FontWeight.w600,
@@ -510,6 +521,15 @@ class MainPage extends StatelessWidget {
                               image:
                                   AssetImage('assets/informasi_lomba_kti.png'),
                             ),
+                            boxShadow: [
+                              BoxShadow(
+                                color: Colors.grey.withOpacity(0.3),
+                                spreadRadius: 2,
+                                blurRadius: 7,
+                                offset: const Offset(
+                                    0, 2), // changes position of shadow
+                              ),
+                            ],
                           ),
                         ),
                         Text(

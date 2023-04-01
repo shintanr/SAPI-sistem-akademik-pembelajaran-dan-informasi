@@ -8,7 +8,7 @@ class PresensiPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: kPrimaryColor,
-      body: Column(
+      body: ListView(
         children: [
           const SizedBox(
             height: 50,
@@ -107,7 +107,7 @@ class PresensiPage extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(
-                  height: 100,
+                  height: 200,
                 ),
               ],
             ),

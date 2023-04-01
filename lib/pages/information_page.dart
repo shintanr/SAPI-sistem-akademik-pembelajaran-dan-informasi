@@ -29,7 +29,8 @@ class InformationPage extends StatelessWidget {
               padding: const EdgeInsets.all(15),
               decoration: BoxDecoration(
                 color: kWhiteColor,
-                borderRadius: const BorderRadius.vertical(top: Radius.circular(25)),
+                borderRadius:
+                    const BorderRadius.vertical(top: Radius.circular(25)),
               ),
               child: Column(
                 children: [
@@ -55,11 +56,11 @@ class InformationPage extends StatelessWidget {
                                   fit: BoxFit.cover),
                               boxShadow: [
                                 BoxShadow(
-                                  color: Colors.grey.withOpacity(0.5),
-                                  spreadRadius: 5,
+                                  color: Colors.grey.withOpacity(0.3),
+                                  spreadRadius: 2,
                                   blurRadius: 7,
                                   offset: const Offset(
-                                      0, 3), // changes position of shadow
+                                      0, 2), // changes position of shadow
                                 ),
                               ],
                             ),
@@ -91,7 +92,7 @@ class InformationPage extends StatelessWidget {
                             child: TextButton(
                               onPressed: () {},
                               style: TextButton.styleFrom(
-                                backgroundColor: kPrimaryColor,
+                                backgroundColor: kLightBlueColor,
                                 shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(5),
                                 ),
@@ -150,11 +151,11 @@ class InformationPage extends StatelessWidget {
                               ),
                               boxShadow: [
                                 BoxShadow(
-                                  color: Colors.grey.withOpacity(0.5),
-                                  spreadRadius: 5,
+                                  color: Colors.grey.withOpacity(0.3),
+                                  spreadRadius: 2,
                                   blurRadius: 7,
                                   offset: const Offset(
-                                      0, 3), // changes position of shadow
+                                      0, 2), // changes position of shadow
                                 ),
                               ],
                             ),
@@ -186,7 +187,7 @@ class InformationPage extends StatelessWidget {
                             child: TextButton(
                               onPressed: () {},
                               style: TextButton.styleFrom(
-                                backgroundColor: kPrimaryColor,
+                                backgroundColor: kLightBlueColor,
                                 shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(5),
                                 ),
@@ -243,11 +244,11 @@ class InformationPage extends StatelessWidget {
                               ),
                               boxShadow: [
                                 BoxShadow(
-                                  color: Colors.grey.withOpacity(0.5),
-                                  spreadRadius: 5,
+                                  color: Colors.grey.withOpacity(0.3),
+                                  spreadRadius: 2,
                                   blurRadius: 7,
                                   offset: const Offset(
-                                      0, 3), // changes position of shadow
+                                      0, 2), // changes position of shadow
                                 ),
                               ],
                             ),
@@ -279,7 +280,7 @@ class InformationPage extends StatelessWidget {
                             child: TextButton(
                               onPressed: () {},
                               style: TextButton.styleFrom(
-                                backgroundColor: kPrimaryColor,
+                                backgroundColor: kLightBlueColor,
                                 shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(5),
                                 ),
@@ -336,11 +337,11 @@ class InformationPage extends StatelessWidget {
                               ),
                               boxShadow: [
                                 BoxShadow(
-                                  color: Colors.grey.withOpacity(0.5),
-                                  spreadRadius: 5,
+                                  color: Colors.grey.withOpacity(0.3),
+                                  spreadRadius: 2,
                                   blurRadius: 7,
                                   offset: const Offset(
-                                      0, 3), // changes position of shadow
+                                      0, 2), // changes position of shadow
                                 ),
                               ],
                             ),
@@ -372,7 +373,7 @@ class InformationPage extends StatelessWidget {
                             child: TextButton(
                               onPressed: () {},
                               style: TextButton.styleFrom(
-                                backgroundColor: kPrimaryColor,
+                                backgroundColor: kLightBlueColor,
                                 shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(5),
                                 ),
