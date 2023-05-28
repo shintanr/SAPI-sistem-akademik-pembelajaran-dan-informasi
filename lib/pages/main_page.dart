@@ -37,7 +37,7 @@ class MainPage extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      'Zayn Malik',
+                      'Shinta Nurrohmah',
                       style: whiteTextStyle.copyWith(
                         fontSize: 16,
                         fontWeight: FontWeight.w600,
@@ -47,7 +47,7 @@ class MainPage extends StatelessWidget {
                       height: 6,
                     ),
                     Text(
-                      '21120121150093',
+                      '21120121140093',
                       style: whiteTextStyle.copyWith(
                           fontSize: 14, fontWeight: FontWeight.w400),
                     ),
