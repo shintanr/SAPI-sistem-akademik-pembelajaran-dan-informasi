@@ -16,7 +16,7 @@ class InformationPage extends StatelessWidget {
             ),
             Center(
               child: Text(
-                'Presensi',
+                'Informasi',
                 style: whiteTextStyle.copyWith(
                     fontSize: 20, fontWeight: FontWeight.bold),
               ),
